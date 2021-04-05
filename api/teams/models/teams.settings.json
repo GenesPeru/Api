@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "teams"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "semester": {
+      "type": "string"
+    },
+    "volunteers": {
+      "via": "teams",
+      "collection": "volunteers"
+    }
+  }
+}
