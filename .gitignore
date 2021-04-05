@@ -87,7 +87,7 @@ public/uploads/*
 # Node.js
 ############################
 node_modules
-
+node_module
 lib-cov
 lcov.info
 pids
