@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "managers",
   "info": {
-    "name": "managers"
+    "name": "managers",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,19 +20,11 @@
     "lastName": {
       "type": "string"
     },
-    "photo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "mail": {
       "type": "email"
+    },
+    "photoUrl": {
+      "type": "string"
     }
   }
 }

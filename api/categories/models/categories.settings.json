@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "categories",
   "info": {
-    "name": "categories"
+    "name": "categories",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,20 +14,12 @@
     "name": {
       "type": "string"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "businesses": {
       "via": "category",
       "collection": "businesses"
+    },
+    "imageUrl": {
+      "type": "string"
     }
   }
 }
