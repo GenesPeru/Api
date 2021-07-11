@@ -26,8 +26,8 @@
       ]
     },
     "teams": {
-      "collection": "teams",
       "via": "volunteers",
+      "collection": "teams",
       "dominant": true
     },
     "photoUrl": {
